@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${merriweather.className} antialiased bg-black`}>
+      <body className={`${merriweather.className} antialiased bg-zinc-950`}>
         <Navbar />
         <main className="mt-[80px]">{children}</main>
       </body>
