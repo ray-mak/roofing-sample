@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Merriweather_Sans, Bebas_Neue } from "next/font/google"
 import { Navbar } from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${merriweather.className} antialiased bg-zinc-950`}>
         <Navbar />
         <main className="mt-[80px]">{children}</main>
+        <Footer />
       </body>
     </html>
   )
