@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection"
+import OurWorkSection from "@/components/OurWorkSection"
 import ServicesSection from "@/components/ServicesSection"
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <HeroSection />
       <ServicesSection />
+      <OurWorkSection />
     </div>
   )
 }
