@@ -17,8 +17,8 @@ const ContactSection = () => {
             specialists today!
           </p>
           <div className="mt-4 text-gray-300">
-            <Link href="tel:555-555-5555" className="flex gap-4 ">
-              <FontAwesomeIcon icon={faPhoneVolume} className="w-8" />
+            <Link href="tel:555-555-5555" className="flex gap-4 items-center">
+              <FontAwesomeIcon icon={faPhoneVolume} className="w-8 h-8" />
               <p className="text-2xl font-semibold">555-555-5555</p>
             </Link>
           </div>
