@@ -1,3 +1,4 @@
+import ContactSection from "@/components/ContactSection"
 import HeroSection from "@/components/HeroSection"
 import OurArtists from "@/components/OurArtists"
 import OurWorkSection from "@/components/OurWorkSection"
@@ -10,6 +11,7 @@ export default function Home() {
       <ServicesSection />
       <OurWorkSection />
       <OurArtists />
+      <ContactSection />
     </div>
   )
 }
