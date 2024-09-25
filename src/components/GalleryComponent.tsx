@@ -62,8 +62,7 @@ const GalleryComponent = () => {
                 src={showModal}
                 alt="picture of tattoo"
                 fill
-                objectFit="cover"
-                className="hover:cursor-zoom-out"
+                className="hover:cursor-zoom-out object-cover"
                 onClick={() => setShowModal("")}
               />
             </div>
