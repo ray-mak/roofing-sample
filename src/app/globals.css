@@ -91,6 +91,15 @@
   z-index: -1;
 }
 
+.directions {
+  width: 36px;
+  height: 26px;
+  background-image: url("/images/fork-right.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 768px) {
   .banner {
     height: 200px;
