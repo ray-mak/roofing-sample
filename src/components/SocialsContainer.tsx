@@ -12,7 +12,7 @@ const SocialsContainer = () => {
     <div className="w-fit grid grid-cols-4 gap-4">
       <div>
         <Link
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/people/Dim-Light-Studio/100089748133065/"
           target="_blank"
           className="relative group flex items-center justify-center overflow-hidden"
         >
@@ -44,7 +44,7 @@ const SocialsContainer = () => {
       </div>
       <div>
         <Link
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/dimlightstudio_murrieta/"
           target="_blank"
           className="relative group flex items-center justify-center overflow-hidden"
         >

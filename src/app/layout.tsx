@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
-  title: "Tattoo Shop ",
+  title: "Dimlight Studio",
   description: "Get your next tattoo today!",
 }
 
@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${merriweather.className} antialiased bg-zinc-950`}>
+      <body
+        className={`${merriweather.className} antialiased bg-zinc-950 text-gray-200`}
+      >
         <Navbar />
         <main className="mt-[80px]">{children}</main>
         <Footer />

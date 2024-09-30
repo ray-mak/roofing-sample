@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="p-6 w-full md:w-5/6 lg:w-3/4 lg:max-w-6xl items-center justify-center">
         <div className="flex flex-col gap-12 text-gray-100 ">
           <h1 className="uppercase text-xl md:text-3xl xl:text-7xl font-bold tracking-wider text-center">
-            Welcome to Tattoo Parlor
+            Welcome to Dimlight Studio
           </h1>
           <p className="md:text-xl text-center tracking-wide">
             Custom tattoos crafted with passion and precision. Bring your ideas

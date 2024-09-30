@@ -12,31 +12,31 @@ const Footer = () => {
   const hoursOfOperation = [
     {
       day: "Sunday",
-      hours: "Closed",
+      hours: "10:00 AM - 5:00 PM",
     },
     {
       day: "Monday",
-      hours: "9:00 AM - 5:00 PM",
+      hours: "10:00 AM - 5:00 PM",
     },
     {
       day: "Tuesday",
-      hours: "9:00 AM - 5:00 PM",
+      hours: "10:00 AM - 5:00 PM",
     },
     {
       day: "Wednesday",
-      hours: "9:00 AM - 5:00 PM",
+      hours: "10:00 AM - 5:00 PM",
     },
     {
       day: "Thursday",
-      hours: "9:00 AM - 5:00 PM",
+      hours: "10:00 AM - 5:00 PM",
     },
     {
       day: "Friday",
-      hours: "9:00 AM - 5:00 PM",
+      hours: "10:00 AM - 5:00 PM",
     },
     {
       day: "Saturday",
-      hours: "10:00 AM - 3:00 PM",
+      hours: "10:00 AM - 5:00 PM",
     },
   ]
   return (
@@ -47,11 +47,11 @@ const Footer = () => {
         <div className="flex flex-col gap-2">
           <h3 className="text-3xl tracking-wider">CONTACT</h3>
           <p className="text-gray-400">
-            123 Main Street <br /> Anytown, USA
+            24831 Jefferson Ave #113 <br /> Murrieta, CA 92562
           </p>
-          <p className="text-2xl text-gray-200">555-555-5555</p>
+          <p className="text-2xl text-gray-200">951-834-3893</p>
           <p className="underline underline-offset-4 decoration-amber-500 text-gray-400">
-            info@example.com
+            dimlightstudio2022@gmail.com
           </p>
           <div className="mt-4">
             <SocialsContainer />

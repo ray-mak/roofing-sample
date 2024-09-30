@@ -8,14 +8,14 @@ const OurWorkSection = () => {
       <div className="w-full p-2">
         <GalleryComponent />
       </div>
-      <div className="mt-6">
+      {/* <div className="mt-6">
         <Link
           href="/gallery"
           className="text-white font-bold text-lg bg-amber-800 hover:bg-amber-900 px-8 py-3"
         >
           See More of Our Work
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }
