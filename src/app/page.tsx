@@ -4,8 +4,10 @@ import OurArtists from "@/components/OurArtists"
 import OurWorkSection from "@/components/OurWorkSection"
 import ServicesSection from "@/components/ServicesSection"
 import ReviewsSection from "@/components/TestimonialsSection"
+import ReactDOM from "react-dom"
 
 export default function Home() {
+  ReactDOM.preload("/images/hero-bg.webp", { as: "image" })
   return (
     <div>
       <HeroSection />
