@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react"
 
-import getMapsData from "../actions/getMapsData"
+// import getMapsData from "../actions/getMapsData"
 import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons"
@@ -10,23 +10,23 @@ import ContactForm from "@/components/ContactForm"
 
 const ContactPage = () => {
   const [apiKey, setApiKey] = useState<string | null>()
-  useEffect(() => {
-    const fetchMapData = async () => {
-      try {
-        const response = await getMapsData()
-        if (response.error) {
-          console.error(response.error)
-          return
-        } else if (response.apiKey) {
-          setApiKey(response.apiKey)
-        }
-      } catch (error) {
-        console.error(error)
-      }
-    }
+  // useEffect(() => {
+  //   const fetchMapData = async () => {
+  //     try {
+  //       const response = await getMapsData()
+  //       if (response.error) {
+  //         console.error(response.error)
+  //         return
+  //       } else if (response.apiKey) {
+  //         setApiKey(response.apiKey)
+  //       }
+  //     } catch (error) {
+  //       console.error(error)
+  //     }
+  //   }
 
-    fetchMapData()
-  }, [])
+  //   fetchMapData()
+  // }, [])
 
   if (apiKey) {
     return (
