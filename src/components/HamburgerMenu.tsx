@@ -57,6 +57,15 @@ export default function HamburgerMenu() {
           Services
         </Link>
         <Link
+          href="/gallery"
+          className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-amber-700  hover:text-amber-700 ${
+            pathname === "/gallery" ? "underline text-amber-700" : ""
+          }`}
+          onClick={closeHamburger}
+        >
+          Gallery
+        </Link>
+        <Link
           href="/about"
           className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-amber-700 hover:text-amber-700 ${
             pathname === "/about" ? "underline text-amber-700" : ""
