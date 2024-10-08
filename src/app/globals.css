@@ -14,7 +14,7 @@
   display: block;
   margin-top: 20px;
   right: 0;
-  background: rgb(180 83 9);
+  background: rgb(14 116 144);
   transition: width 0.3s ease;
   -webkit-transition: width 0.3s ease;
 }
@@ -22,7 +22,7 @@
 .underline-animation:hover:after {
   width: 100%;
   left: 0;
-  background: rgb(180 83 9);
+  background: rgb(14 116 144);
 }
 
 .hero-section {
@@ -32,6 +32,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-section::before {

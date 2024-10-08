@@ -34,14 +34,14 @@ export default function HamburgerMenu() {
       <div
         className={`navmenu ${
           oswald.className
-        } uppercase bg-gray-800 md:bg-inherit flex gap-6 ml-auto items-center justify-center text-2xl text-gray-100 ${
+        } uppercase bg-gray-800 md:bg-inherit flex gap-6 ml-auto items-center justify-center text-2xl text-gray-900 ${
           hamburgerMenu ? "opened" : ""
         } `}
       >
         <Link
           href="/"
-          className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-amber-700 hover:text-amber-700 ${
-            pathname === "/" ? "underline text-amber-700" : ""
+          className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-cyan-700 hover:text-cyan-700 ${
+            pathname === "/" ? "underline text-cyan-700" : ""
           }`}
           onClick={closeHamburger}
         >
@@ -49,8 +49,8 @@ export default function HamburgerMenu() {
         </Link>
         <Link
           href="/services"
-          className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-amber-700  hover:text-amber-700 ${
-            pathname === "/services" ? "underline text-amber-700" : ""
+          className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-cyan-700  hover:text-cyan-700 ${
+            pathname === "/services" ? "underline text-cyan-700" : ""
           }`}
           onClick={closeHamburger}
         >
@@ -67,8 +67,8 @@ export default function HamburgerMenu() {
         </Link> */}
         <Link
           href="/about"
-          className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-amber-700 hover:text-amber-700 ${
-            pathname === "/about" ? "underline text-amber-700" : ""
+          className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-cyan-700 hover:text-cyan-700 ${
+            pathname === "/about" ? "underline text-cyan-700" : ""
           }`}
           onClick={closeHamburger}
         >
@@ -76,8 +76,8 @@ export default function HamburgerMenu() {
         </Link>
         <Link
           href="/contact"
-          className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-amber-700 hover:text-amber-700 ${
-            pathname === "/contact" ? "underline text-amber-700" : ""
+          className={`underline-animation font-medium md:underline-offset-[25px] decoration-4 decoration-cyan-700 hover:text-cyan-700 ${
+            pathname === "/contact" ? "underline text-cyan-700" : ""
           }`}
           onClick={closeHamburger}
         >
