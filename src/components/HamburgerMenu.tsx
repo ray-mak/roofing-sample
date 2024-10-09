@@ -34,7 +34,7 @@ export default function HamburgerMenu() {
       <div
         className={`navmenu ${
           oswald.className
-        } uppercase bg-gray-200 md:bg-inherit flex gap-6 ml-auto items-center justify-center text-2xl text-gray-900 ${
+        } uppercase bg-gray-200 md:bg-inherit flex gap-6 ml-auto items-center justify-center text-2xl text-gray-900 dark:text-gray-200 ${
           hamburgerMenu ? "opened" : ""
         } `}
       >

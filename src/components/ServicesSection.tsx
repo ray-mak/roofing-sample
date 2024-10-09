@@ -1,103 +1,78 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const ServicesSection = () => {
+  const features = [
+    {
+      title: "Roof Repair",
+      image: "/images/repair.png",
+      description:
+        "We are a full-service roofing installation and repair company dedicated to prividing the best service and the best quality work.",
+    },
+    {
+      title: "Roof Installation",
+      image: "/images/house.png",
+      description:
+        "We are a full-service roofing installation and repair company dedicated to prividing the best service and the best quality work.",
+    },
+    {
+      title: "Roof Tear Offs",
+      image: "/images/tear.png",
+      description:
+        "We are a full-service roofing installation and repair company dedicated to prividing the best service and the best quality work.",
+    },
+  ]
   return (
-    <div className="flex flex-col items-center justify-center gap-4 sm:gap-10 py-20">
-      <h2 className="text-white font-bold text-4xl p-4">What We Do</h2>
-      <p className="text-gray-300 text-center p-4">
-        We create custom designs or bring your ideas to life with your own
-        sketches. <br />
-        Our shop specializes in high-quality, long-lasting tattoos
+    <div className="flex flex-col items-center justify-center gap-8 py-28">
+      <h2 className="font-bold text-4xl text-center">
+        Customer Service is Our{" "}
+        <span className="text-cyan-500">Top Priority</span>
+      </h2>
+      <p className="text-center p-4 w-full md:w-5/6 lg:w-3/4 lg:max-w-4xl">
+        We are roofing contractors that specialize in roof repair, new roof
+        installation, metal roofing, commercial roofing, and flat roofing. Our
+        company is on a mission to provide our community with the safest roofing
+        materials and do so with honesty, integrity, and top-notch quality
       </p>
-      <div className="mt-6 w-full md:w-5/6 lg:w-3/4 lg:max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 p-4 md:p-0 text-gray-200">
-        <div className="grid grid-cols-1 sm:grid-cols-10 bg-zinc-900 transition duration-300 border border-transparent hover:border hover:border-amber-500">
-          <div className="order-2 sm:order-1 col-span-7 py-6 px-8">
-            <div className="flex flex-col gap-4">
-              <p className="text-center sm:text-right font-bold">Tattooing</p>
-              <p className="text-center sm:text-right text-xs sm:text-sm text-zinc-400">
-                From custom designs to classic styles, our expert artists bring
-                your vision to life with precision and creativity.
-              </p>
-              <p className="text-center sm:text-right text-sm text-amber-500">
-                From $50
-              </p>
+      <div className="my-16 w-full md:w-5/6 lg:w-3/4 lg:max-w-6xl grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 p-4 md:p-0">
+        {features.map((feature, index) => (
+          <div className="group relative flex flex-col items-center justify-center gap-4 border border-gray-300 bg-gray-50 dark:bg-gray-800 p-6 hover:border-teal-700 hover:shadow-xl  transition-colors duration-300">
+            <div>
+              <Image
+                src={feature.image}
+                width={70}
+                height={70}
+                alt={`icon of ${feature.title}`}
+              />
             </div>
+            <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 text-center">
+              {feature.title}
+            </h2>
+            <p className="text-center text-gray-800 dark:text-gray-200">
+              {feature.description}
+            </p>
+            <div className="absolute top-0 h-1 bg-cyan-600 dark:bg-cyan-500 w-1/3 group-hover:w-full  duration-300 justify-center"></div>
           </div>
-          <div className="order-1 sm:order-2 col-span-1 sm:col-span-3 flex items-center justify-center p-6 bg-zinc-800">
-            <Image
-              alt="tattoo icon"
-              src="/images/tattoo-icon.png"
-              width={80}
-              height={80}
-            />
-          </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-10 bg-zinc-900 transition duration-300 border border-transparent hover:border hover:border-amber-500">
-          <div className="col-span-3 flex items-center justify-center p-6 bg-zinc-800">
-            <Image
-              alt="tattoo icon"
-              src="/images/piercing-icon.png"
-              width={80}
-              height={80}
-            />
-          </div>
-          <div className="col-span-7 py-6 px-8">
-            <div className="flex flex-col gap-4">
-              <p className="text-center sm:text-left font-bold">Piercing</p>
-              <p className="text-center sm:text-left text-sm text-zinc-400">
-                Professional body piercings with a variety of styles to choose
-                from. Express yourself with confidence.
-              </p>
-              <p className="text-center sm:text-left text-sm text-amber-500">
-                From $30
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-10 bg-zinc-900 transition duration-300 border border-transparent hover:border hover:border-amber-500">
-          <div className="order-2 sm:order-1 col-span-7 py-6 px-8">
-            <div className="flex flex-col gap-4">
-              <p className="text-center sm:text-right font-bold">Removal</p>
-              <p className="text-center sm:text-right text-sm text-zinc-400">
-                We offer effective tattoo removal solutions, helping you make
-                room for new ink or restore your skin.
-              </p>
-              <p className="text-center sm:text-right text-sm text-amber-500">
-                From $50
-              </p>
-            </div>
-          </div>
-          <div className="order-1 sm:order-2 col-span-3 flex items-center justify-center p-6 bg-zinc-800">
-            <Image
-              alt="tattoo icon"
-              src="/images/removal-icon.png"
-              width={80}
-              height={80}
-            />
-          </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-10 bg-zinc-900 transition duration-300 border border-transparent hover:border hover:border-amber-500">
-          <div className="col-span-3 flex items-center justify-center p-6 bg-zinc-800">
-            <Image
-              alt="tattoo ink icon"
-              src="/images/coverup-icon.png"
-              width={80}
-              height={80}
-            />
-          </div>
-          <div className="col-span-7 py-6 px-8">
-            <div className="h-full flex flex-col gap-4">
-              <p className="text-center sm:text-left font-bold">Cover Up</p>
-              <p className="text-center sm:text-left text-sm text-zinc-400 flex-grow">
-                Turn old or unwanted tattoos into fresh works of art with our
-                expert cover-up services.
-              </p>
-              <p className="text-center sm:text-left text-sm text-amber-500">
-                From $30
-              </p>
-            </div>
-          </div>
-        </div>
+        ))}
+      </div>
+      <h2 className="font-bold text-4xl text-center">
+        <span className="text-cyan-500">Roofing Repair</span> Contractors in
+        Murrieta, CA
+      </h2>
+      <p className="text-center p-4 w-full md:w-5/6 lg:w-3/4 lg:max-w-4xl">
+        We are proud to offer a one-year warrantee on every job we complete, so
+        our clients can rest assured that their new roof install or repair will
+        withstand the test of time. In addition, our roofing contractors are
+        happy to come out and complete an emergency roof repair at any time of
+        the day or night!
+      </p>
+      <div>
+        <Link
+          href="/contact"
+          className="uppercase px-12 border-2 border-cyan-700 bg-cyan-700 hover:border-cyan-800 hover:bg-cyan-800 text-white font-semibold rounded tracking-wider py-3"
+        >
+          Roofing Services
+        </Link>
       </div>
     </div>
   )

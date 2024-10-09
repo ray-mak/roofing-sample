@@ -13,6 +13,7 @@ export default function Home() {
     <div>
       <HeroSection />
       <InfoSection />
+      <ServicesSection />
     </div>
   )
 }

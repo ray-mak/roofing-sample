@@ -101,6 +101,22 @@
   background-repeat: no-repeat;
 }
 
+.theme-button {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: rgb(71 85 105);
+  left: -0.25rem;
+  top: -0.25rem;
+  transition: transform 0.4s ease;
+}
+
+.theme-button.darkmode {
+  background-color: white;
+  transform: translateX(1rem);
+}
+
 @media (max-width: 768px) {
   .banner {
     height: 200px;

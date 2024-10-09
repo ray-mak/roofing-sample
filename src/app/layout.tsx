@@ -3,9 +3,10 @@ import "./globals.css"
 import { Merriweather_Sans } from "next/font/google"
 import { Navbar } from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import { Providers } from "@/providers"
 
 export const metadata: Metadata = {
-  title: "Dimlight Studio",
+  title: "Roofing Service",
   description: "Get your next tattoo today!",
 }
 
@@ -21,11 +22,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${merriweather.className} antialiased`}>
-        <Navbar />
-        <main className="mt-[80px]">{children}</main>
-        <Footer />
+        <Providers>
+          <Navbar />
+          <main className="mt-[80px]">{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   )
