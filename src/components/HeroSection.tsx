@@ -18,7 +18,7 @@ const HeroSection = () => {
             <h1 className="text-3xl xl:text-6xl font-bold tracking-wider">
               Experienced roofing repair in Murrieta, CA
             </h1>
-            <div className="w-[60px] h-[4px] bg-cyan-600"></div>
+            <div className="w-[60px] h-[4px] bg-cyan-600 xl:mt-4"></div>
             <p className="md:text-xl tracking-wide">
               We are a full-service roofing installation and repair company
               dedicated to prividing the best service and the best quality work.

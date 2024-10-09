@@ -1,5 +1,6 @@
 import ContactSection from "@/components/ContactSection"
 import HeroSection from "@/components/HeroSection"
+import InfoSection from "@/components/InfoSection"
 import OurArtists from "@/components/OurArtists"
 import OurWorkSection from "@/components/OurWorkSection"
 import ServicesSection from "@/components/ServicesSection"
@@ -11,11 +12,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <ServicesSection />
-      <OurWorkSection />
-      <OurArtists />
-      <ContactSection />
-      <ReviewsSection />
+      <InfoSection />
     </div>
   )
 }

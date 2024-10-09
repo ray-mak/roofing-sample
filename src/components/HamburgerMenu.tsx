@@ -26,15 +26,15 @@ export default function HamburgerMenu() {
         onClick={toggleHamburger}
         className={`hamburger  ${hamburgerMenu ? "opened" : ""}`}
       >
-        <span className="bar bg-gray-200"></span>
-        <span className="bar bg-gray-200"></span>
-        <span className="bar bg-gray-200"></span>
+        <span className="bar bg-gray-900"></span>
+        <span className="bar bg-gray-900"></span>
+        <span className="bar bg-gray-900"></span>
       </div>
       <div className={`dimmer ${hamburgerMenu ? "opened" : ""}`}></div>
       <div
         className={`navmenu ${
           oswald.className
-        } uppercase bg-gray-800 md:bg-inherit flex gap-6 ml-auto items-center justify-center text-2xl text-gray-900 ${
+        } uppercase bg-gray-200 md:bg-inherit flex gap-6 ml-auto items-center justify-center text-2xl text-gray-900 ${
           hamburgerMenu ? "opened" : ""
         } `}
       >

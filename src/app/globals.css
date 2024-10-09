@@ -28,7 +28,7 @@
 .hero-section {
   position: relative;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(88vh - 80px);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -109,6 +109,10 @@
   .navbar {
     position: fixed;
     z-index: 3;
+  }
+
+  .hero-section {
+    height: calc(100vh - 80px);
   }
 
   .navmenu {
