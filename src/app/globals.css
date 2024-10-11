@@ -117,6 +117,12 @@
   transform: translateX(1rem);
 }
 
+.image-section {
+  background-image: url("/images/house-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 768px) {
   .banner {
     height: 200px;
