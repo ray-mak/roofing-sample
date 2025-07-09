@@ -1,4 +1,4 @@
-import ArtistGrid from "@/components/ArtistGrid"
+// import ArtistGrid from "@/components/ArtistGrid"
 import ContactSection from "@/components/ContactSection"
 import Image from "next/image"
 import React from "react"
@@ -49,7 +49,7 @@ const AboutPage = () => {
         </div>
         <div className="w-full flex flex-col items-center justify-center bg-gray-950 py-20 px-4">
           <h2 className="text-white font-bold text-5xl mb-12">Meet Our Team</h2>
-          <ArtistGrid />
+          {/* <ArtistGrid /> */}
         </div>
       </div>
       <ContactSection />
