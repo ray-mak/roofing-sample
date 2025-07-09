@@ -36,7 +36,7 @@ const ServicesSection = () => {
       </p>
       <div className="my-16 w-full md:w-5/6 lg:w-3/4 lg:max-w-6xl grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 p-4 md:p-0">
         {features.map((feature, index) => (
-          <div className="group relative flex flex-col items-center justify-center gap-4 border border-gray-300 bg-gray-50 dark:bg-gray-800 p-6 hover:border-teal-700 hover:shadow-xl  transition-colors duration-300">
+          <div key={index} className="group relative flex flex-col items-center justify-center gap-4 border border-gray-300 bg-gray-50 dark:bg-gray-800 p-6 hover:border-teal-700 hover:shadow-xl  transition-colors duration-300">
             <div>
               <Image
                 src={feature.image}
