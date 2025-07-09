@@ -18,7 +18,7 @@ const SocialsContainer = () => {
         >
           <FontAwesomeIcon
             icon={faFacebookF}
-            className="text-amber-500 w-6 h-6 group-hover:-translate-y-full transition-transform duration-300"
+            className="text-cyan-400 w-6 h-6 group-hover:-translate-y-full transition-transform duration-300"
           />
           <FontAwesomeIcon
             icon={faFacebookF}
@@ -34,7 +34,7 @@ const SocialsContainer = () => {
         >
           <FontAwesomeIcon
             icon={faXTwitter}
-            className="text-amber-500 w-6 h-6 group-hover:-translate-y-full transition-transform duration-300"
+            className="text-cyan-400 w-6 h-6 group-hover:-translate-y-full transition-transform duration-300"
           />
           <FontAwesomeIcon
             icon={faXTwitter}
@@ -50,7 +50,7 @@ const SocialsContainer = () => {
         >
           <FontAwesomeIcon
             icon={faInstagram}
-            className="text-amber-500 w-6 h-6 group-hover:-translate-y-full transition-transform duration-300"
+            className="text-cyan-400 w-6 h-6 group-hover:-translate-y-full transition-transform duration-300"
           />
           <FontAwesomeIcon
             icon={faInstagram}
@@ -66,7 +66,7 @@ const SocialsContainer = () => {
         >
           <FontAwesomeIcon
             icon={faPinterestP}
-            className="text-amber-500 w-6 h-6 group-hover:-translate-y-full transition-transform duration-300"
+            className="text-cyan-400 w-6 h-6 group-hover:-translate-y-full transition-transform duration-300"
           />
           <FontAwesomeIcon
             icon={faPinterestP}

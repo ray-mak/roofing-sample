@@ -41,17 +41,17 @@ const Footer = () => {
   ]
   return (
     <div
-      className={`${oswald.className} flex flex-col items-center justify-center bg-gray-950 py-4`}
+      className={`${oswald.className} flex flex-col items-center justify-center bg-gray-800 py-4`}
     >
       <div className="md:w-5/6 lg:w-3/4 lg:max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 px-4 md:px-0 py-16 text-gray-200 gap-16">
         <div className="flex flex-col gap-2">
           <h3 className="text-3xl tracking-wider">CONTACT</h3>
           <p className="text-gray-400">
-            24831 Jefferson Ave #113 <br /> Murrieta, CA 92562
+            555 S. Main Street <br /> Anytown, CA 55555
           </p>
-          <p className="text-2xl text-gray-200">951-834-3893</p>
-          <p className="underline underline-offset-4 decoration-amber-500 text-gray-400">
-            dimlightstudio2022@gmail.com
+          <p className="text-2xl text-gray-200">555-555-5555</p>
+          <p className="underline underline-offset-4 decoration-cyan-500 text-gray-400">
+            info@gmail.com
           </p>
           <div className="mt-4">
             <SocialsContainer />

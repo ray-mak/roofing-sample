@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm"
 import ContactSection from "@/components/ContactSection"
 import HeroSection from "@/components/HeroSection"
 import InfoSection from "@/components/InfoSection"
